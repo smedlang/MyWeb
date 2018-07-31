@@ -19,8 +19,7 @@ class Home extends Component{
   render(){
     return (
       <div>
-        <h1>Home Page</h1>
-        <img style={{height: 400}} src = {profile} />
+        <img style={{display: "inline", paddingTop: 20, height: 400}} src = {profile} />
         <h2> Links </h2>
         <ul>
           <li> <a href="http://linkedin.com/in/savita-medlang"> Linkedin</a> </li>
@@ -49,20 +48,16 @@ class App extends Component {
             <header className="App-header">
               <h1 className="App-title">Welcome to Savi's Website</h1>
               <h1>{this.state.header}</h1>
-              <button onClick = {()=> this.setState({
-                header: 'Home'})}>   <Link to= {'/'}> Home       </Link> </button>
-              <button onClick = {()=> this.setState({header: 'Quiz'})}>  <Link to={'/quiz'}> Quiz    </Link> </button>
-              <button onClick = {()=> this.setState({header: 'Photos'})}>  <Link to={'/photos'}> Photos</Link> </button>
-              <button onClick = {()=> this.setState({header: 'Music'})}>  <Link to={'/music'}> Music  </Link> </button>
-              <button onClick = {()=> this.setState({header: 'Games'})}>  <Link to={'/games'}> Games  </Link> </button>
+              <button onClick = {()=> this.setState({header: 'Home'})}>  <Link to={'/'}>      Home    </Link> </button>
+              <button onClick = {()=> this.setState({header: 'Quiz'})}>  <Link to={'/quiz'}>  Quiz    </Link> </button>
+              <button onClick = {()=> this.setState({header: 'Photos'})}><Link to={'/photos'}>Photos  </Link> </button>
+              <button onClick = {()=> this.setState({header: 'Music'})}> <Link to={'/music'}> Music   </Link> </button>
+              <button onClick = {()=> this.setState({header: 'Games'})}> <Link to={'/games'}> Games   </Link> </button>
 
             </header>
             </div>
             <div>
-              <Route exact={true} path="/" render= {()=> (<Home />
-
-              )}/>
-
+              <Route exact={true} path="/" render= {()=> (<Home />)}/>
               <Route exact={true} path="/quiz" render={()=> (<Quiz />)}/>
               <Route exact={true} path="/photos" render={()=> (<Photos /> )}/>
               <Route exact={true} path="/music" render={()=> (<Music /> )}/>

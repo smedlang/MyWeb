@@ -10,8 +10,8 @@ export default class Music extends React.Component{
 
   render(){
     return (
-      <div style={{justifyContent: "center"}}> <h1> Testing Music!! </h1> </div>
-    )
+      <div> </div>
+    );
   }
 
 }

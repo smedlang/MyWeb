@@ -7,7 +7,7 @@ export default class Games extends React.Component{
   render(){
     return (
       <div>
-        <div> <h1> Testing Games!! </h1> </div>
+        <div> <h1> Tic Tac Toe </h1> </div>
         <Game />
       </div>
     )

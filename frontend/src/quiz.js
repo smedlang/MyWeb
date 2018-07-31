@@ -10,8 +10,8 @@ export default class Quiz extends React.Component{
 
   render(){
     return (
-      <div> <h1> Testing Quiz!! </h1> </div>
-    )
+      <div> </div>
+    );
   }
 
 }
