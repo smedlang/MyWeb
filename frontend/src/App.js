@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import './App.css';
 import profile from './profile.jpg'
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
+import posed from 'react-pose'
 import Quiz from './quiz.js'
 import Photos from './photos.js'
 import Games from './games.js'
 import Music from './music.js'
 
+const Box = posed.div({});
 
 class Home extends Component{
   constructor(props){
@@ -24,6 +26,8 @@ class Home extends Component{
         <ul>
           <li> <a href="http://linkedin.com/in/savita-medlang"> Linkedin</a> </li>
           <li> <a href="https://github.com/smedlang"> GitHub</a> </li>
+          <li> <Box classname="box" /> Hello </li>
+
         </ul>
       </div>
     );
