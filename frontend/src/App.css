@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #7B68EE;
+  background-color: #1DB0BA;
   height: 150px;
   padding: 20px;
   color: white;
@@ -15,4 +15,37 @@
 
 .App-intro {
   font-size: large;
+}
+
+.tab {
+  background-color: white;
+  font-size: 12pt;
+  margin: 5px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.tab :hover {
+  color: red;
+}
+
+.profilePic {
+  display: inline;
+  margin: 20px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+.profilePic :hover {
+
+  animation-name: shake;
+  animation-duration: 1s;
+
+}
+
+@keyframes shake {
+    0%   {transform: rotate(15deg); }
+    25% {transform: rotate(-15deg);}
+    50%  {transform: rotate(15deg);}
+    75% {transform: rotate(-15deg);}
+    100% {transform: rotate(15deg);}
 }
