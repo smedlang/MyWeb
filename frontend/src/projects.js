@@ -9,10 +9,7 @@ export default class Projects extends Component {
   render(){
     return (
       <div>
-        HeadSmart
-        DocShare
-        Slack Calender Scheduler Bot
-        Trivia Game
+        COMING SOON
       </div>
     );
   }

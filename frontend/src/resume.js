@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
-import resume from './resume.docx'
+import {Document, Page} from 'react-pdf'
+let resume = require('./resume.pdf');
+
 
 console.log(resume);
 export default class Resume extends Component{
@@ -9,10 +11,12 @@ export default class Resume extends Component{
   }
   render(){
     return (
-
-      <div>
-        <a href = "./resume.pdf"> Resume</a>
-      </div>
+        <Document
+          file={resume}
+          onLoadSuccess={()=> console.log('success')}
+          >
+          <Page width={1400} pageNumber={1} />
+        </Document>
     );
   }
 }
