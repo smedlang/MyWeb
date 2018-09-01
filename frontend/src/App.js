@@ -14,6 +14,7 @@ import Resume from './resume.js'
 import linkedin from './linkedin.jpg'
 import github from './github.png'
 import mail from './mail.png'
+import house from './house.png'
 
 let tab = stylesheet.stylesheet.tab;
 let header = stylesheet.stylesheet.header;
@@ -27,7 +28,9 @@ class Home extends Component{
   constructor(props){
     super(props);
 
-    this.state={};
+    this.state={
+      header: 'home'
+    };
 
   }
 
@@ -67,13 +70,13 @@ class App extends Component {
         <div>
           <div className="App" height= "100%">
             <header className="App-header" style ={header}>
-              <h1 className="App-title">Savi Medlang</h1>
-              <h1>{this.state.header}</h1>
-              <button className="tab" >  <Link to={'/'}>      Home    </Link> </button>
-              <button className="tab" >  <Link to={'/projects'}>  Projects    </Link> </button>
-              <button className="tab" ><Link to={'/resume'}> Resume  </Link> </button>
-              <button className="tab" ><Link to={'/aboutme'}> About Me  </Link> </button>
-
+              <h1 style={{fontSize: '25pt', fontFamily: '"Palatino Linotype", "Book Antiqua", Palatino, serif'}}> Savita Medlang</h1>
+              <div>
+                <Link onClick={()=> this.setState({header: 'home'})} className="tab" to={'/'}> HOME </Link>
+                <Link onClick={()=> this.setState({header: 'projects'})} className="tab" to={'/projects'}>  PROJECTS    </Link>
+                <Link onClick={()=> this.setState({header: 'resume'})} className="tab" to={'/resume'}> RESUME  </Link>
+                <Link onClick={()=> this.setState({header: 'aboutme'})} className="tab" to={'/aboutme'}> ABOUT ME  </Link>
+              </div>
             </header>
 
 
@@ -94,6 +97,8 @@ class App extends Component {
               <a href="http://www.github.com/smedlang"> <img style ={smallIcon} src={github} /> </a>
               <a href="http://linkedin.com/in/savita-medlang"> <img style={smallIcon} src = {linkedin} /> </a>
               <a href='mailto:smedlang@gmail.com?subject=Hey Savi!'> <img style= {smallIcon} src={mail}/> </a>
+              <br />
+              <p style= {{color: '#D8D7D7', fontFamily: '"Palatino Linotype", "Book Antiqua", Palatino, serif'}}> ©Savita Medlang 2018 </p>
             </div>
         </div>
       </Router>
