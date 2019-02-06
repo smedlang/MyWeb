@@ -25,8 +25,8 @@ class Project extends Component{
   }
 
   render(){
-    return (<div>
-      <img src={this.props.photo}/>
+    return (<div style={{textAlign: "center"}}>
+      <img style={{paddingTop: 20,width: 600}} src={this.props.photo}/>
       {this.props.caption}
     </div>)
   }
