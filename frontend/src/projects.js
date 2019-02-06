@@ -10,7 +10,10 @@ export default class Projects extends Component {
   render(){
     return (
       <div>
-        <Project photo={docshare} caption="Document sharing"/>
+        <Project photo={docshare} caption="Document sharing" link="https://github.com/smedlang/Couldn-t-Share-Less"/>
+        <Project photo={docshare} caption="Document sharing" link="https://github.com/smedlang/Couldn-t-Share-Less"/>
+        <Project photo={docshare} caption="Document sharing" link="https://github.com/smedlang/Couldn-t-Share-Less"/>
+
       </div>
     );
   }
@@ -26,8 +29,11 @@ class Project extends Component{
 
   render(){
     return (<div style={{textAlign: "center"}}>
-      <img style={{paddingTop: 20,width: 600}} src={this.props.photo}/>
-      {this.props.caption}
+      <img style={{textAlign: "left", paddingTop: 20,width: 400}} src={this.props.photo}/>
+      <div>
+        <Link to={this.props.link}>See this on GitHub</Link>
+        {this.props.caption}
+      </div>
     </div>)
   }
 }
