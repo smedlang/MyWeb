@@ -10,7 +10,7 @@ export default class Projects extends Component {
   render(){
     return (
       <div>
-        <Project photo={beach} caption="Document sharing"/>
+        <Project photo={docshare} caption="Document sharing"/>
       </div>
     );
   }
@@ -26,8 +26,8 @@ class Project extends Component{
 
   render(){
     return (<div>
-      <img src={docshare}/>
-      {caption}
+      <img src={this.props.photo}/>
+      {this.props.caption}
     </div>)
   }
 }
