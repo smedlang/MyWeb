@@ -29,8 +29,10 @@ class Project extends Component{
 
   render(){
     return (<div style={{textAlign: "center"}}>
-      <img style={{textAlign: "left", paddingTop: 20,width: 400}} src={this.props.photo}/>
+      <div style={{textAlign: "center"}}>
+        <img style={{textAlign: "left", paddingTop: 20,width: 400}} src={this.props.photo}/>
       <div>
+      <div style={{textAlign: "right"}}>
         {/* <Link to={this.props.link}>See this on GitHub</Link> */}
         {this.props.caption}
       </div>
