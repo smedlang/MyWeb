@@ -16,9 +16,15 @@ export default class Projects extends Component {
         <div style={{height: 100, fontFamily: '"Palatino Linotype", "Book Antiqua", Palatino, serif'}}>
           <h1 style={{textAlign: "center"}}>Featured Technical Projects</h1>
         </div>
+<<<<<<< HEAD
         <Project photo={docshare} title="Couldn't Share Less" caption="This is a document sharing application, that allows real-time editing between multiple users on the same document." link="https://github.com/smedlang/Couldn-t-Share-Less"/>
         <Project photo={epantry} title="ePantry" caption="This is the ePantry iOS application, which functions as a smart pantry and recipe searching application." link="https://github.com/smedlang/Couldn-t-Share-Less"/>
         <Project photo={ugood} title="HeadSmart" caption="This is an application built on ReactNative used to monitor daily mental health and make smart suggestions based on the user's profile" link="https://github.com/smedlang/Couldn-t-Share-Less"/>
+=======
+        <Project photo={docshare} caption="This is a document sharing application, that allows real-time editing between multiple users on the same document." link="https://github.com/smedlang/Couldn-t-Share-Less"/>
+        <Project photo={epantry} caption="This is the ePantry iOS application, which functions as a smart pantry and recipe searching application." link="https://github.com/smedlang/Couldn-t-Share-Less"/>
+        <Project photo={ugood} caption="This is an application built on ReactNative used to monitor daily mental health and make smart suggestions based on the user's profile." link="https://github.com/smedlang/Couldn-t-Share-Less"/>
+>>>>>>> e12c7cb993f156cc56af68ca0f737dea03785eba
 
       </div>
     );
