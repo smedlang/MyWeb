@@ -18,7 +18,7 @@ export default class Projects extends Component {
         </div>
         <Project photo={docshare} caption="This is a document sharing application, that allows real-time editing between multiple users on the same document." link="https://github.com/smedlang/Couldn-t-Share-Less"/>
         <Project photo={epantry} caption="This is the ePantry iOS application, which functions as a smart pantry and recipe searching application." link="https://github.com/smedlang/Couldn-t-Share-Less"/>
-        <Project photo={ugood} caption="This is an application built on ReactNative used to monitor daily mental health and make smart suggestions based on the user's profile" link="https://github.com/smedlang/Couldn-t-Share-Less"/>
+        <Project photo={ugood} caption="This is an application built on ReactNative used to monitor daily mental health and make smart suggestions based on the user's profile." link="https://github.com/smedlang/Couldn-t-Share-Less"/>
 
       </div>
     );
