@@ -34,8 +34,8 @@ class Project extends Component{
 
   render(){
     return (
-      <div style={{}}>
-          <img style={{justifyContent: "left", float: "left", paddingLeft: 100, paddingTop: 20, height: 300,}} src={this.props.photo}/>
+      <div style={{paddingLeft: 100, paddingTop: 20, paddingRight: 100}}>
+          <img style={{justifyContent: "left", float: "left",  height: 300,}} src={this.props.photo}/>
         <div style={{height: 300, textAlign: "center", paddingTop: 100}}>
           <h3><u>{this.props.title}</u></h3> <br/>
           <p>{this.props.caption}</p>
