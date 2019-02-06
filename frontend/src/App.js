@@ -20,10 +20,6 @@ let tab = stylesheet.stylesheet.tab;
 let header = stylesheet.stylesheet.header;
 let smallIcon = stylesheet.stylesheet.smallIcon
 
-console.log(tab);
-
-const Box = posed.div({});
-
 class Home extends Component{
   constructor(props){
     super(props);
