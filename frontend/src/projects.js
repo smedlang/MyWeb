@@ -1,5 +1,8 @@
 import React, { Component, Link } from 'react';
 import docshare from './docshare.png';
+import epantry from './images/epantry.png';
+import ugood from './images/ugood.png';
+
 
 export default class Projects extends Component {
   constructor(props){
@@ -9,10 +12,13 @@ export default class Projects extends Component {
 
   render(){
     return (
-      <div>
-        <Project photo={docshare} caption="Document sharing" link="https://github.com/smedlang/Couldn-t-Share-Less"/>
-        <Project photo={docshare} caption="Document sharing" link="https://github.com/smedlang/Couldn-t-Share-Less"/>
-        <Project photo={docshare} caption="Document sharing" link="https://github.com/smedlang/Couldn-t-Share-Less"/>
+      <div style={{alignItems: "center", height: 300}}>
+        <div style={{height: 100, fontFamily: '"Palatino Linotype", "Book Antiqua", Palatino, serif'}}>
+          <h1 style={{textAlign: "center"}}>Featured Technical Projects</h1>
+        </div>
+        <Project photo={docshare} caption="This is a document sharing application, that allows real-time editing between multiple users on the same document." link="https://github.com/smedlang/Couldn-t-Share-Less"/>
+        <Project photo={epantry} caption="This is the ePantry iOS application, which functions as a smart pantry and recipe searching application." link="https://github.com/smedlang/Couldn-t-Share-Less"/>
+        <Project photo={ugood} caption="This is an application built on ReactNative used to monitor daily mental health and make smart suggestions based on the user's profile" link="https://github.com/smedlang/Couldn-t-Share-Less"/>
 
       </div>
     );
@@ -28,14 +34,12 @@ class Project extends Component{
   }
 
   render(){
-    return (<div style={{textAlign: "center"}}>
-      <div style={{textAlign: "center"}}>
-        <img style={{textAlign: "left", paddingTop: 20,width: 400}} src={this.props.photo}/>
-      </div>
-      <div style={{textAlign: "right"}}>
-        {/* <Link to={this.props.link}>See this on GitHub</Link> */}
-        {this.props.caption}
-      </div>
-    </div>)
+    return (
+      <div style={{}}>
+          <img style={{justifyContent: "left", float: "left", paddingLeft: 100, paddingTop: 20, height: 300,}} src={this.props.photo}/>
+        <div style={{height: 300, textAlign: "center", paddingTop: 100}}>
+          <p>{this.props.caption}</p>
+        </div>
+      </div>)
   }
 }
