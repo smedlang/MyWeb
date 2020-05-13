@@ -98,7 +98,7 @@ class App extends Component {
               <a href="http://linkedin.com/in/savita-medlang"> <img style={smallIcon} src = {linkedin} /> </a>
               <a href="mailto:smedlang@gmail.com?subject=Hey Savi!"> <img style= {smallIcon} src={mail}/> </a>
               <br />
-              <p style= {{color: '#D8D7D7', fontFamily: '"Palatino Linotype", "Book Antiqua", Palatino, serif'}}> ©Savita Medlang 2018 </p>
+              <p style= {{color: '#D8D7D7', fontFamily: '"Palatino Linotype", "Book Antiqua", Palatino, serif'}}> ©Savita Medlang 2020 </p>
             </div>
         </div>
       </Router>
