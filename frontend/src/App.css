@@ -37,17 +37,3 @@
   border-radius: 50%;
 }
 
-.profilePic :hover {
-
-  animation-name: shake;
-  animation-duration: 1s;
-
-}
-
-@keyframes shake {
-    0%   {transform: rotate(15deg); }
-    25% {transform: rotate(-15deg);}
-    50%  {transform: rotate(15deg);}
-    75% {transform: rotate(-15deg);}
-    100% {transform: rotate(15deg);}
-}
